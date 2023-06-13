@@ -6,7 +6,7 @@ trigger:
 variables:
   service-connection: 'Azure-ARM-Prod-oli-non' # replace with your service connection name
   resource-group: 'mlops-machinelearning-rg' # replace with your resource group name
-  workspace: 'docs-ws' # replace with your workspace name
+  workspace: 'mlw-mlopsliteoli-0004-prod' # replace with your workspace name
 
 jobs:
 - job: SubmitAzureMLJob
@@ -61,6 +61,7 @@ jobs:
     inputs:
       serviceConnection: 'Azure-ARM-Prod-oli-non'
       resourceGroupName: 'mlops-machinelearning-rg'
-      azureMLWorkspaceName: 'docs-ws'
+      azureMLWorkspaceName: 'mlw-mlopsliteoli-0004-prod'
       azureMLJobName: $(azureml_job_name_from_submit_job)
+
 
