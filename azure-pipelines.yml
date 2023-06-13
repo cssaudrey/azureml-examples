@@ -59,7 +59,8 @@ jobs:
   steps:
   - task: AzureMLJobWaitTask@0
     inputs:
-      serviceConnection: Azure-ARM-Prod-oli-non
-      resourceGroupName: mlops-machinelearning-rg
-      azureMLWorkspaceName: docs-ws
-      azureMLJobName: $(azureml_job_name_from_submit_job)        
+      serviceConnection: 'Azure-ARM-Prod-oli-non'
+      resourceGroupName: 'mlops-machinelearning-rg'
+      azureMLWorkspaceName: 'docs-ws'
+      azureMLJobName: $(azureml_job_name_from_submit_job)
+
